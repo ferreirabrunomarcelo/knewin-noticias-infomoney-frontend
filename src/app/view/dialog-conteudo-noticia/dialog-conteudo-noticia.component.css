@@ -1,0 +1,41 @@
+.titulo {
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.mat-typography {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-dialog-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    font-weight: bold;
+}
+
+.mat-dialog-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #111111;
+}
+
+.mat-dialog-actions {
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-button {
+    background-color: #0171f6;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-dialog-content {
+    font-family: 'Montserrat', sans-serif;
+    color: #111111;
+}

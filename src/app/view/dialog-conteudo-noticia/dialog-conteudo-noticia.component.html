@@ -1,0 +1,20 @@
+<div class="content">
+    <div class="titulo">
+        <p mat-dialog-title>{{data.titulo}}
+
+        </p>
+    </div>
+
+    <div class="subtitulo">
+        <h3>{{data.subtitulo}}</h3>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <mat-dialog-content class="mat-typography">
+        <span *ngFor="let p of data.conteudo">{{p}}<br> <br></span>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Fechar</button>
+    </mat-dialog-actions>
+</div>
