@@ -1,0 +1,47 @@
+.mat-card {
+    width: 380px;
+    height: 340px;
+    margin-top: 32px;
+    border: 1px solid #0171f6;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8%;
+}
+
+.panel-container {
+    margin-left: 2%;
+    margin-right: -2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mat-card-content {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+    top: 48%;
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 2px;
+    text-align: justify;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 2px;
+    text-align: justify;
+}
+
+.mat-button {
+    background-color: #0171f6;
+    color: white;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    font-family: 'Montserrat', sans-serif;
+}
