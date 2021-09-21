@@ -56,7 +56,6 @@ export class CadastroNoticiasComponent implements OnInit {
   exibirMensagemUsuario(mensagem: string) {
     this.snackBar.open(mensagem, '', {
       duration: 2000
-      color:
     });
     this.mensagemErro = '';
   }
