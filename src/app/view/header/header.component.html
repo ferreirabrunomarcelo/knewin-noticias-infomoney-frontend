@@ -1,0 +1,30 @@
+<div fxFlexFill cdkScrollable>
+    <mat-toolbar>
+
+        <span class="infomoney-noticias">Infomoney notícias</span>
+
+        <span class="example-spacer"></span>
+
+        <div class="search-bar">
+            <mat-form-field class="mat-search-field" [@slideInOut]="searchVisible" appearance="outline">
+                <input matInput type="text" [(ngModel)]="termoBusca" matInput [ngModelOptions]="{standalone: true} ">
+            </mat-form-field>
+
+            <span class="mat-search_icons" [class.mat-search_icons--active]="searchVisible">
+                <mat-icon class="mat-search_icon-close" (click)="close()" matRipple>
+                  close
+                </mat-icon>
+                <mat-icon class="mat-search_icon-search" (click)="open()" matRipple>
+                  search
+                </mat-icon>
+              </span>
+        </div>
+
+        <button mat-button (click)="cadastrarNoticia() ">Cadastrar</button>
+
+    </mat-toolbar>
+
+    <mat-divider></mat-divider>
+
+    <app-lista-noticias [termoBusca]=" termoBusca "></app-lista-noticias>
+</div>

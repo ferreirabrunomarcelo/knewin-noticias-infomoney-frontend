@@ -1,0 +1,91 @@
+.mat-toolbar {
+    background-color: white;
+    color: gray;
+    height: 64px;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 400;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.infomoney-noticias {
+    margin-left: 4px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+::ng-deep .mat-form-field-flex>.mat-form-field-infix {
+    padding: 0.4em 0px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    top: -1.5em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1.1em) scale(.85);
+    width: 133.33333%;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: gray !important;
+}
+
+.mat-search-field {
+    position: absolute;
+    z-index: 1;
+    padding: 0px 0px 0px 0px;
+    width: 720px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.mat-search_icons {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mat-search_icon-close,
+.mat-search_icon-search {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.mat-search_icon-close,
+.mat-search_icons--active .mat-search_icon-search {
+    opacity: 0;
+    transform: rotate(225deg);
+}
+
+.mat-search_icons--active .mat-search_icon-close {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+    transform: rotate(360deg);
+}
