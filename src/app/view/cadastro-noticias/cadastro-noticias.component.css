@@ -1,0 +1,35 @@
+.content {
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+}
+
+.mat-dialog-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.mat-dialog-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-form-field {
+    width: 280px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.mat-button {
+    background-color: #0171f6;
+    color: white;
+    text-align: center;
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-button-salvar {
+    margin-left: 10px;
+}

@@ -1,0 +1,21 @@
+<div class="content">
+
+    <h1 mat-dialog-title>Cadastrar nova notícia</h1>
+    <div mat-dialog-content>
+        <div class="container">
+            <form (ngSubmit)="cadastrarNoticia(formDirective)" [formGroup]="formulario" #formDirective="ngForm">
+
+                <mat-form-field>
+                    <mat-label>URL *</mat-label>
+                    <input matInput id="url" name="url" placeholder="Ex. https://www.infomoney.com.br/mercados/itausa-lucra-123-mais-no-1o-tri-a-r-24-bi-prejuizo-da-marisa-cai-50-e-mais-balancos-petrobras-petrorio-e-outros-destaques/" formControlName="url" />
+                    <mat-error *ngIf="formulario.controls['url'].errors?.required">URL <strong>Obrigatória</strong></mat-error>
+                    <mat-error *ngIf="formulario.controls['url'].errors?.pattern">Por favor insira uma URL válida</mat-error>
+                </mat-form-field>
+
+                <div class="buttons">
+                    <button mat-button [mat-dialog-close]="true">Cancelar</button>
+                    <button class="mat-button-salvar" mat-button [disabled]="formulario.invalid ">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
