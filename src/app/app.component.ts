@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'knewin-noticias-infomoney-frontend';
+
+  public constructor(private title: Title) {
+
+  }
+
+  ngOnInit(): void { 
+    this.title.setTitle("Infomoney Notícias");
+  }
+ 
 }
