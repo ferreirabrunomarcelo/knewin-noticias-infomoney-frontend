@@ -64,3 +64,8 @@ networks:
 ```yml
 docker-compose up
 ```
+3. Acesse o sistema através do navegador na seguinte url:
+
+```
+http://localhost:4200/
+```
